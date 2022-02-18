@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import propTypes from 'prop-types';
 
 class MissionCard extends Component {
   render() {
@@ -10,8 +11,15 @@ class MissionCard extends Component {
         <p data-testid="mission-country">{country}</p>
         <p data-testid="mission-destination">{destination}</p>
       </div>
-    )
+    );
   }
 }
+
+MissionCard.propTypes = {
+  name: propTypes.string.isRequired,
+  year: propTypes.number.isRequired,
+  country: propTypes.string.isRequired,
+  destination: propTypes.string.isRequired,
+};
 
 export default MissionCard;
