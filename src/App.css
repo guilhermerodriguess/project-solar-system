@@ -1,6 +1,56 @@
-.App {
+* {
+  color: white;
+}
+
+body {
   background-image: url('./images/background.png');
   background-size: cover;
+}
+
+header {
+  font-size: xx-large;
   text-align: center;
 }
 
+.planet-title {
+  border: 1px white solid;
+  border-radius: 10px;
+  font-size: xx-large;
+  margin: 10px 500px;
+  text-align: center;
+}
+
+.planet-cards {
+  display: flex;
+  text-align: center;
+}
+
+img {
+  object-fit: contain;
+  width: 100%;
+}
+
+.missions-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 20px 500px;
+}
+
+.mission-card {
+  border: 1px white solid;
+  border-radius: 10px;
+  flex-grow: 1;
+  width: 150px;
+}
+
+p {
+  margin: 10px 20px;
+}
+
+.mission-card-title {
+  border: 1px white solid;
+  border-radius: 10px;
+  font-size: 19px;
+  font-weight: 900;
+}
